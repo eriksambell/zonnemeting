@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*****************
+* MEDIUM DEVICES *
+******************/
+
+@media screen and (min-width: 480px){
+
+  .container {
+    max-width: 500px;
+  }
+
+  header .container {
+    max-width: none;
+  }
+
+  #hero h2 {
+    padding: 0 10%;
+  }
+
+  #services article {
+    max-width: 350px;
+  }
+
+  .singlePageHeading.contactPage {
+    background-image: url(../images/bg/bg-meeting-med.jpg);
+  }
+
+  .singlePageHeading.servicesPage {
+    background-image: url(../images/bg/bg-sunnygrass-med.jpg);
+  }
+
+  .footer-descr {
+    width: 384px;
+  }
+
+  /* Feedback message */
+
+  $feedbackHeight: 56px;
+
+  .feedback {
+    top:-$feedbackHeight;
+    font-size: 95%;
+  }
+
+  @keyframes animateFeedback{
+    0%    {top: -$feedbackHeight; }
+    10%   {top: -$feedbackHeight; }
+    20%   {top: 0px; }
+    80%   {top: 0px; }
+    100%  {top: -$feedbackHeight; }
+  }
+
+}
+
+@media screen and (min-width: 768px){
+
+  .logo {
+    font-size: 200%;
+  }
+
+  .feedback {
+    font-size: 100%;
+  }
+
+  .mob-nav {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: inherit;
+    border-width: 0;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 0;
+      margin-right: 22px;
+      display: inline;
+      padding: 0;
+
+      a {
+        color: #fff;
+        -webkit-text-stroke: 0.1px rgba(255,255,255,0.5);
+        padding: 0;
+      }
+
+      a:hover {
+        background-color: inherit;
+        color: $color-primary;
+        -webkit-text-stroke: 0.1px rgba(207,170,69,0.5);
+      }
+    }
+
+  }
+
+  .header-light .nav li {
+
+    a {
+      color: #000;
+      -webkit-text-stroke: 0.1px rgba(0,0,0,0.5);
+    }
+
+    a:hover {
+      color: $color-primary;
+      -webkit-text-stroke: 0.1px rgba(207,170,69,0.5);
+    }
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .services-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #services article {
+    margin: 10px;
+  }
+
+  .two-col,
+  #contact>.container {
+    display: flex;
+    width: 100%;
+  }
+
+  #contact>.container {
+    width: 90%;
+  }
+
+  #testimonial, #action {
+    flex-basis: 50%;
+  }
+
+  #contact-details {
+    flex-basis: 34%;
+    margin-right: 8%;
+  }
+
+  #contact-form {
+    flex-basis: 58%;
+  }
+
+  footer .two-col {
+    justify-content: flex-end;
+
+    section {
+      flex-basis: auto;
+      margin-left: 60px;
+    }
+  }
+
+  footer .container {
+    width: 90%;
+  }
+
+  .services-article {
+    max-width: 800px;
+
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+
+  .services-image {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services-article-body {
+    columns: 2;
+    column-gap: 40px;
+    column-rule: 2px dotted rgba(0,0,0,0.1);
+  }
+
+}

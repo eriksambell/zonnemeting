@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*****************
+** BIG  DEVICES **
+******************/
+
+@media screen and (min-width: 992px){
+
+  .contact-form-nameField {
+    width: 35%;
+  }
+
+  .contact-form-emailField {
+    width: 60%;
+    float: right;
+    margin-top: 0;
+  }
+
+  .footer-descr {
+    float: left;
+    width: 250px;
+  }
+
+  footer .two-col {
+    width: auto;
+  }
+
+  .services-image img {
+    border: 7px solid #fff;
+    box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+/*********************
+** VERY BIG DEVICES **
+*********************/
+
+@media screen and (min-width: 1200px){
+
+    .container,
+    header .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hero {
+      margin-top: -50px;
+
+      h2 {
+        font-weight: 400;
+      }
+
+    }
+
+    .hero-container {
+      background-image: url(../images/hero/hero-bg1-2000px.jpg);
+    }
+
+    #services article {
+      width: 310px;
+    }
+
+    .singlePageHeading.contactPage {
+      background-image: url(../images/bg/bg-meeting-big.jpg);
+    }
+
+    .singlePageHeading.servicesPage {
+      background-image: url(../images/bg/bg-sunnygrass-big.jpg);
+    }
+
+    #contact {
+      width: 100%;
+    }
+
+    #contact-details {
+      flex-basis: 50%;
+      margin: 0;
+      .container {
+        float: right;
+        margin-right: 60px;
+        width: 480px;
+      }
+    }
+
+    #contact-form {
+      flex-basis: 50%;
+      margin: 0;
+      .container {
+        float: left;
+        margin-left: 60px;
+        width: 480px;
+      }
+    }
+
+    .full-width {
+      max-width: none;
+    }
+
+    #testimonial .container {
+      float: right;
+      margin-right: 60px;
+      width: 480px;
+    }
+
+    #action .container {
+      float: left;
+      margin-left: 60px;
+      width: 480px;
+    }
+
+}

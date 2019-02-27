@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*
+** Styling *****************
+***** Zonnemeting website **
+*/
+
+@import "_reset.scss";
+
+/* color scheme */
+
+$color-primary: #cfaa45;
+$color-border1: #e5e7e9;
+$color-bg1: #f2f3f8;
+$color-sec2: #dedede;
+$color-sec3: #566677;
+$color-sec4: #324454;
+$color-sec5: #25313d;
+$color-sec6: #535457;
+
+/* typography */
+
+$font-prim: 'Open Sans', sans-serif;  // font-weight: 400,500,700i
+$font-sec: 'Raleway', sans-serif;     // font-weight: 300,400,500,700,800
+$font-ter: 'Ubuntu', sans-serif;      // font-weight: 500
+
+$awesome5: 'Font Awesome 5 Free';
+$awesome5b: 'Font Awesome 5 Brands';
+$awesome4: 'FontAwesome';
+
+/* transitions */
+
+$trans-fast: 100ms;
+$trans-med: 300ms;
+$trans-slow: 500ms;
+
+/* settings */
+
+$width: 92%;
+
+%padding {
+    width: $width;
+    padding: (100% - $width) / 2;
+}
+
+@mixin flex-center-mixin(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-center {
+    @include flex-center-mixin();
+}
+
+/* import partials */
+
+@import "_zonnemeting-small";
+@import "_zonnemeting-med";
+@import "_zonnemeting-big";
