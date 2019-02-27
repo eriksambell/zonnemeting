@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: 
+Allow: /index.php
+Allow: /zonen.php
+Allow: /header.php
+Allow: /footer.php
+Allow: /contact.php
+Disallow: /disclaimer.php
+Disallow: /privacy-policy.php
+Disallow: /g-analytics.php
+Disallow: /bat
+Disallow: /css/style.css
+Disallow: /fonts
+Disallow: /images
+Disallow: /js
+
+SITEMAP: http://www.zonnemeting.nl/sitemap.xml
