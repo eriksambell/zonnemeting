@@ -1,2 +1,2 @@
 # zonnemeting
-Zonnemeting website
+Dit is de zonnemeting website
