@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])){
 
-  $recipient = 'info@zonnemeting.nl';
+  $recipient = 'fake@mail.net';
   $subject = 'Contact Zonnemeting.nl';
   $template = file_get_contents('rd-mailform.tpl');
 
